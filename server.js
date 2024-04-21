@@ -6,6 +6,11 @@ const express = require("express")
 const app = express()
 
 /* ******************************************
+ * Default GET route
+ * ***************************************** */
+app.get("/", (req, res) => {res.send("Welcome home!")})
+
+/* ******************************************
  * Server host name and port
  * ***************************************** */
 const HOST = 'localhost'
